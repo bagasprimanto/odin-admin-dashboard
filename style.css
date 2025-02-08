@@ -97,7 +97,7 @@ li {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(300px, 1fr) minmax(570px, 4fr);
 }
 
 /* Sidebar styles */
@@ -115,6 +115,11 @@ body {
 
 .sidebar .logo {
     font-size: 1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2rem;
+    align-items: center;
+    column-gap: 8px;
 }
 
 .sidebar .nav-main ul,
