@@ -71,3 +71,53 @@ h6 {
 }
 
 /* Styles */
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    display: grid;
+    grid-auto-rows: 100px min-content;
+    row-gap: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #00aeff;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.sidebar .logo {
+    font-size: 1.5rem;
+}
+
+.sidebar .nav-main ul,
+.sidebar .nav-misc ul {
+    display: grid;
+    row-gap: 8px;
+    font-size: 1.2rem;
+}
