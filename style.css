@@ -144,9 +144,5 @@ body {
 
 .header {
     display: grid;
-}
-
-.header .top-header {
-    display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 3fr 2fr;
 }
