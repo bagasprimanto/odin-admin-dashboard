@@ -71,6 +71,11 @@ h6 {
 }
 
 /* Styles */
+html {
+    --lh: 1.4rem;
+    line-height: var(--lh);
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('Roboto-Black.woff2') format('woff2'),
@@ -287,6 +292,7 @@ body {
 .main-content h2 {
     font-weight: 500;
     font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 
 .main-content h3 {
@@ -297,4 +303,39 @@ body {
     grid-column: 2 / 3;
     display: grid;
     align-items: start;
+    row-gap: 32px;
+}
+
+/* Projects sidebar */
+.projects-sidebar {
+    height: min-content;
+}
+
+/* Announcements */
+
+.announcements .list {
+    display: grid;
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.announcements .list .announcement {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.announcements .list .announcement:last-of-type {
+    border-bottom: none;
+}
+
+.truncate-overflow {
+    --max-lines: 3;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
 }
