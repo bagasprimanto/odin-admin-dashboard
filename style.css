@@ -97,7 +97,7 @@ li {
 
 body {
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(570px, 4fr);
+    grid-template-columns: minmax(240px, 1fr) minmax(570px, 4fr);
 }
 
 /* Sidebar styles */
@@ -107,10 +107,13 @@ body {
     grid-auto-rows: 100px min-content;
     row-gap: 32px;
     align-items: center;
-    justify-content: center;
     background-color: #00aeff;
     color: #ffffff;
     font-weight: 900;
+}
+
+.sidebar>* {
+    margin-left: 32px;
 }
 
 .sidebar .logo {
@@ -135,4 +138,15 @@ body {
     grid-auto-flow: column;
     align-items: center;
     column-gap: 24px;
+}
+
+/* Header styles */
+
+.header {
+    display: grid;
+}
+
+.header .top-header {
+    display: grid;
+    grid-auto-flow: column;
 }
