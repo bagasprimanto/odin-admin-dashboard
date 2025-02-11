@@ -149,8 +149,7 @@ body {
     padding-left: 16px;
     color: black;
     row-gap: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px;
     padding-left: 32px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -239,4 +238,33 @@ body {
 
 .header .account-greeting .user-name {
     font-size: 1.2rem;
+}
+
+/* Header Actions */
+
+.header ul.actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul.actions li button {
+    appearance: none;
+    border: none;
+    background-color: #00aeff;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    padding: 8px 24px;
+    border-radius: 40px;
+    justify-self: center;
+    align-items: center;
+}
+
+.header ul.actions li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
