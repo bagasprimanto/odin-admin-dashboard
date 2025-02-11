@@ -169,7 +169,7 @@ body {
 }
 
 .search .search-bar input[type="search"] {
-    width: 90%;
+    width: 100%;
     appearance: none;
     border: none;
     border-radius: 15px;
@@ -184,4 +184,30 @@ body {
     column-gap: 24px;
     grid-template-columns: repeat(3, min-content);
     margin-right: max(80px, 20%);
+}
+
+.header .account-info a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 24px;
+    position: relative;
+    padding: 2px;
+    margin: -2em;
+}
+
+.header .account-info svg {
+    min-width: 24px;
+}
+
+.header .account-info img {
+    min-width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header .account-info .user-name.small {
+    white-space: nowrap;
+    font-weight: 900;
 }
