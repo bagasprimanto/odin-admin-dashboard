@@ -250,6 +250,12 @@ body {
     justify-content: center;
 }
 
+.header ul.actions li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header ul.actions li button {
     appearance: none;
     border: none;
@@ -261,11 +267,6 @@ body {
     border-radius: 40px;
     justify-self: center;
     align-items: center;
+    grid-column: span 1;
     flex: 1 0 auto;
-}
-
-.header ul.actions li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
