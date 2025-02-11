@@ -98,6 +98,7 @@ li {
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    background-color: #f0f0f0;
 }
 
 /* Sidebar styles */
@@ -111,6 +112,7 @@ body {
     background-color: #00aeff;
     color: #ffffff;
     font-weight: 900;
+    z-index: 3;
 }
 
 .sidebar>* {
@@ -148,10 +150,11 @@ body {
     grid-template-columns: 3fr 2fr;
     padding-left: 16px;
     color: black;
+    background-color: white;
     row-gap: 16px;
     padding: 24px;
     padding-left: 32px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Search bar */
@@ -270,3 +273,5 @@ body {
     grid-column: span 1;
     flex: 1 0 auto;
 }
+
+/* Main Content styles */
