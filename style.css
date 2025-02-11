@@ -152,6 +152,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin-left: 16px;
+    color: black;
 }
 
 .header .search {
@@ -161,8 +162,12 @@ body {
     column-gap: 8px;
 }
 
+.header .search-icon {
+    width: 24px;
+}
+
 .search .search-bar input[type="search"] {
-    width: 100%;
+    width: 90%;
     appearance: none;
     border: none;
     border-radius: 15px;
