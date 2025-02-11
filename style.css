@@ -144,6 +144,7 @@ body {
 /* Main style */
 .main {
     margin-left: 16px;
+    margin-top: 24px;
 }
 
 /* Header styles */
@@ -153,6 +154,7 @@ body {
     grid-template-columns: 3fr 2fr;
     margin-left: 16px;
     color: black;
+    row-gap: 16px;
 }
 
 .header .search {
@@ -173,4 +175,13 @@ body {
     border-radius: 15px;
     padding: 4px;
     background-color: #e0e0e0;
+}
+
+.header .account-info {
+    display: inline-grid;
+    align-items: center;
+    justify-content: end;
+    column-gap: 24px;
+    grid-template-columns: repeat(3, min-content);
+    margin-right: max(80px, 20%);
 }
