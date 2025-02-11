@@ -141,22 +141,21 @@ body {
     column-gap: 24px;
 }
 
-/* Main style */
-.main {
-    margin-left: 16px;
-    margin-top: 24px;
-}
-
 /* Header styles */
 
 .header {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    margin-left: 16px;
+    padding-left: 16px;
     color: black;
     row-gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Search bar */
 .header .search {
     display: inline-grid;
     align-items: center;
@@ -177,6 +176,8 @@ body {
     background-color: #e0e0e0;
 }
 
+/* Account info & Notification */
+
 .header .account-info {
     display: inline-grid;
     align-items: center;
@@ -189,11 +190,10 @@ body {
 .header .account-info a {
     text-decoration: none;
     color: inherit;
-    display: inline-block;
+    display: block;
     width: 24px;
     position: relative;
     padding: 2px;
-    margin: -2em;
 }
 
 .header .account-info svg {
@@ -210,4 +210,33 @@ body {
 .header .account-info .user-name.small {
     white-space: nowrap;
     font-weight: 900;
+}
+
+/* Account greeting */
+
+.header .account-greeting {
+    display: grid;
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: min-content 2fr;
+    column-gap: 16px;
+}
+
+.header .account-greeting img {
+    min-width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header .account-greeting .greetings {
+    font-weight: 900;
+}
+
+.header .account-greeting .greeting-top {
+    font-size: 0.8rem;
+}
+
+.header .account-greeting .user-name {
+    font-size: 1.2rem;
 }
