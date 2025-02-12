@@ -406,6 +406,10 @@ body {
     border-left: 12px solid gold;
 }
 
+.projects .projects-list .card p {
+    opacity: 50%;
+}
+
 .top-card {
     flex: 1;
 }
