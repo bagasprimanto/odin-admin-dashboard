@@ -397,9 +397,17 @@ body {
 
 .projects .projects-list .card {
     background-color: #ffffff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    border-left: 12px solid gold;
+}
+
+.top-card {
+    flex: 1;
 }
 
 .projects .truncate-overflow {
