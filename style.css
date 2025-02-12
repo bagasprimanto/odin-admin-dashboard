@@ -71,10 +71,6 @@ h6 {
 }
 
 /* Styles */
-html {
-    --lh: 1.4rem;
-    line-height: var(--lh);
-}
 
 @font-face {
     font-family: 'Roboto';
@@ -100,11 +96,19 @@ li {
     padding: 0;
 }
 
+:root {
+    --white: #ffffff;
+    --blue: #00aeff;
+    --bg-white: #f0f0f0;
+    --grey: #e0e0e0;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: #f0f0f0;
+    background-color: var(--bg-white);
 }
+
 
 /* Sidebar styles */
 
@@ -114,10 +118,10 @@ body {
     grid-auto-rows: 100px min-content;
     row-gap: 32px;
     align-items: center;
-    background-color: #00aeff;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--white);
     font-weight: 900;
-    z-index: 3;
+    z-index: 1;
 }
 
 .sidebar>* {
@@ -155,7 +159,7 @@ body {
     grid-template-columns: 3fr 2fr;
     padding-left: 16px;
     color: black;
-    background-color: white;
+    background-color: var(--white);
     row-gap: 16px;
     padding: 24px;
     padding-left: 32px;
@@ -180,7 +184,7 @@ body {
     border: none;
     border-radius: 15px;
     padding: 4px;
-    background-color: #e0e0e0;
+    background-color: var(--grey);
 }
 
 /* Account info & Notification */
@@ -267,8 +271,8 @@ body {
 .header ul.actions li button {
     appearance: none;
     border: none;
-    background-color: #00aeff;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--white);
     font-weight: 900;
     text-align: center;
     padding: 8px 24px;
@@ -312,7 +316,7 @@ body {
 .announcements .list,
 .trending .list {
     display: grid;
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 16px 24px;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -393,7 +397,7 @@ body {
 }
 
 .projects .projects-list .card {
-    background-color: #ffffff;
+    background-color: var(--white);
     box-shadow:
         0px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
