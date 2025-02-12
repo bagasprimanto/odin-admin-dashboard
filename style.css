@@ -382,3 +382,35 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: var(--max-lines);
 }
+
+/* Projects */
+
+.projects .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.projects .projects-list .card {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 24px 24px;
+}
+
+.projects .truncate-overflow {
+    --max-lines: 5;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+}
+
+.projects .projects-list .card .actions {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    margin-top: 16px;
+}
