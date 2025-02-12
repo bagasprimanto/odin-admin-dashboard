@@ -290,7 +290,7 @@ body {
 }
 
 .main-content h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 8px;
 }
@@ -303,13 +303,9 @@ body {
     grid-column: 2 / 3;
     display: grid;
     align-items: start;
-    row-gap: 32px;
 }
 
 /* Projects sidebar */
-.projects-sidebar {
-    height: min-content;
-}
 
 /* Announcements */
 
@@ -346,6 +342,9 @@ body {
 }
 
 /* Trending */
+.trending {
+    margin-top: 32px;
+}
 
 .trending .list .user {
     display: grid;
@@ -384,6 +383,10 @@ body {
 }
 
 /* Projects */
+.projects {
+    display: grid;
+    grid-template-rows: min-content;
+}
 
 .projects .projects-list {
     display: grid;
@@ -400,7 +403,7 @@ body {
 }
 
 .projects .truncate-overflow {
-    --max-lines: 5;
+    --max-lines: 6;
 
     display: -webkit-box;
     overflow: hidden;
@@ -411,6 +414,10 @@ body {
 .projects .projects-list .card .actions {
     display: flex;
     justify-content: end;
-    gap: 16px;
+    gap: 24px;
     margin-top: 16px;
+}
+
+.projects .projects-list .card .actions li {
+    min-width: 1.5rem;
 }
